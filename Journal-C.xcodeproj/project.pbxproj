@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		BFE6388E2460A74800740CE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6388D2460A74800740CE4 /* AppDelegate.m */; };
 		BFE638912460A74800740CE4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE638902460A74800740CE4 /* SceneDelegate.m */; };
-		BFE638942460A74800740CE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE638932460A74800740CE4 /* ViewController.m */; };
 		BFE638972460A74800740CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE638952460A74800740CE4 /* Main.storyboard */; };
 		BFE638992460A74900740CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE638982460A74900740CE4 /* Assets.xcassets */; };
 		BFE6389C2460A74900740CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE6389A2460A74900740CE4 /* LaunchScreen.storyboard */; };
 		BFE6389F2460A74900740CE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE6389E2460A74900740CE4 /* main.m */; };
+		BFE638AD2460A99300740CE4 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE638AC2460A99300740CE4 /* Entry.m */; };
+		BFE638B02460ABE300740CE4 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE638AF2460ABE300740CE4 /* EntryController.m */; };
+		BFE638B32460B14900740CE4 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE638B22460B14900740CE4 /* EntryListTableViewController.m */; };
+		BFE638B62460B60000740CE4 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE638B52460B60000740CE4 /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		BFE6388D2460A74800740CE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BFE6388F2460A74800740CE4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BFE638902460A74800740CE4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BFE638922460A74800740CE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BFE638932460A74800740CE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BFE638962460A74800740CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE638982460A74900740CE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE6389B2460A74900740CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE6389D2460A74900740CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE6389E2460A74900740CE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFE638AB2460A99300740CE4 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		BFE638AC2460A99300740CE4 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		BFE638AE2460ABE300740CE4 /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		BFE638AF2460ABE300740CE4 /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		BFE638B12460B14900740CE4 /* EntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		BFE638B22460B14900740CE4 /* EntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		BFE638B42460B60000740CE4 /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		BFE638B52460B60000740CE4 /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +70,73 @@
 		BFE6388B2460A74800740CE4 /* Journal-C */ = {
 			isa = PBXGroup;
 			children = (
+				BFE638AA2460A97100740CE4 /* Models */,
+				BFE638A92460A96B00740CE4 /* Views */,
+				BFE638A62460A92D00740CE4 /* Controllers */,
+				BFE638A52460A8B400740CE4 /* Resources */,
+				BFE638952460A74800740CE4 /* Main.storyboard */,
+			);
+			path = "Journal-C";
+			sourceTree = "<group>";
+		};
+		BFE638A52460A8B400740CE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				BFE6388C2460A74800740CE4 /* AppDelegate.h */,
 				BFE6388D2460A74800740CE4 /* AppDelegate.m */,
 				BFE6388F2460A74800740CE4 /* SceneDelegate.h */,
 				BFE638902460A74800740CE4 /* SceneDelegate.m */,
-				BFE638922460A74800740CE4 /* ViewController.h */,
-				BFE638932460A74800740CE4 /* ViewController.m */,
-				BFE638952460A74800740CE4 /* Main.storyboard */,
 				BFE638982460A74900740CE4 /* Assets.xcassets */,
 				BFE6389A2460A74900740CE4 /* LaunchScreen.storyboard */,
 				BFE6389D2460A74900740CE4 /* Info.plist */,
 				BFE6389E2460A74900740CE4 /* main.m */,
 			);
-			path = "Journal-C";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BFE638A62460A92D00740CE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE638A82460A95C00740CE4 /* Model Controllers */,
+				BFE638A72460A95000740CE4 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BFE638A72460A95000740CE4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE638B12460B14900740CE4 /* EntryListTableViewController.h */,
+				BFE638B22460B14900740CE4 /* EntryListTableViewController.m */,
+				BFE638B42460B60000740CE4 /* EntryDetailViewController.h */,
+				BFE638B52460B60000740CE4 /* EntryDetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BFE638A82460A95C00740CE4 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE638AE2460ABE300740CE4 /* EntryController.h */,
+				BFE638AF2460ABE300740CE4 /* EntryController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		BFE638A92460A96B00740CE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFE638AA2460A97100740CE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFE638AB2460A99300740CE4 /* Entry.h */,
+				BFE638AC2460A99300740CE4 /* Entry.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE638942460A74800740CE4 /* ViewController.m in Sources */,
+				BFE638B02460ABE300740CE4 /* EntryController.m in Sources */,
+				BFE638AD2460A99300740CE4 /* Entry.m in Sources */,
 				BFE6388E2460A74800740CE4 /* AppDelegate.m in Sources */,
 				BFE6389F2460A74900740CE4 /* main.m in Sources */,
+				BFE638B32460B14900740CE4 /* EntryListTableViewController.m in Sources */,
+				BFE638B62460B60000740CE4 /* EntryDetailViewController.m in Sources */,
 				BFE638912460A74800740CE4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HUHPT9D9;
-				INFOPLIST_FILE = "Journal-C/Info.plist";
+				INFOPLIST_FILE = "Journal-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HUHPT9D9;
-				INFOPLIST_FILE = "Journal-C/Info.plist";
+				INFOPLIST_FILE = "Journal-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
